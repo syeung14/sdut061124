@@ -1,0 +1,17 @@
+Code evolves constantly.
+
+We fix bugs
+We add new features
+We enhance existing features
+
+Two benefits to automated unit tests
+1. Regression
+2. Design
+
+Regression benefit stays with us from the start to the end
+
+You may outgrow the design benefit at some point. TDD serves as a nice
+training wheel for design. You may reach a point of diminishing return
+for the design benefits. But, your team members may still benefit from this
+as they may be at a different level or are new to your team.
+
