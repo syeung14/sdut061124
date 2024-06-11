@@ -1,0 +1,118 @@
+Typically we write a class, put some fields, add getters/setters as necessary,
+we write functions that perform some actions, return a result, and then think of tests.
+
+Unit tests may be written before or after writing a piece of code. However, 
+if we write tests after, we often are trying to work with the design we have thrown together.
+
+If we write tests first, we get to put ourselves in the shoes of the person
+who will use our code. We are able to create a better empathetic design.
+
+Test first development
+
+We can ask does this make sense, is this easier to use by someone, ...
+We can be minimalistic in our design.
+
+We can influence the design of the code if we write test first.
+
+If we write tests after, and if we find it hard to write some tests, 
+because the design does not make it easier, we may give up on writing
+those tests.
+
+Write a test
+Then write minimum code to make the tests pass
+Refactor
+
+But, writing tests is *not* a mechanical process.
+
+Write a test, then stare at it. It tries to tell you something, Listen.
+
+To me, it is write a test, tweak it, tweak it further, until it feels like
+the design is simple and is maintainable.
+
+The influence of TDD is on the design and it not a automatic process. It takes
+deliberate effort and also being really awake.
+
+The person who is going to write the code should be writing the tests.
+
+Think of walking from point A to point B. You want to take one step at a time,
+and not bounce around like a drunkard.
+
+Right foot first
+Left foot next
+
+Likewise,
+one test
+minimum code
+refactor
+one test
+minimum code
+refactor
+...
+
+You need a good rhythm to write test and code as you move forward.
+
+The series of tests should tell a story of how the design has evolved 
+from scratch, incrementally.
+
+If we are pairing, then one person may write a test and the other person
+may implement and we swap - ping pong pairing. Still, the tests are written
+in the same session as we are writing the code. Not entirely before or
+entirely after.
+
+Unit tests should be written as part of writing the code. Not all before
+and not all after.
+
+Write tests at one layer below the GUI. This can help us to get fast feedback
+and make the tests less brittle.
+
+It also helps to separate the GUI from the logic.
+
+Legacy code?
+
+Michael Features says "Legacy code is a piece of code with no tests" Working
+Effectively with Legacy Code book.
+
+The first step in dealing with legacy code is to put an end to legacy code
+becomes older and bigger.
+
+I once worked with a client who said they have "5 years of legacy code" I met them again 5 years later. They said then "We have 10 years of legacy code"
+
+1. Promise to start writing tests for any new code in the legacy application.
+2. Do *not* start writing unit tests randomly or with vengeance on exiting legacy code. The unit tests are not very effective if we do this. We take time away from important tasks that we need to work on.
+3. If some code has not been touched for a long time and there is no plan to
+change it anytime soon, do not bother with any tests on that legacy code. It is there, leave it there.
+4. When you are getting ready to fix a bug, add a new feature, make an enhancement, to existing legacy code, then and only then with very high level tests (approval tests, integration test, or even manual tests) as feedback loops start refactoring. Then write unit tests for that code and then fix the bug, make the
+change, ...
+
+How do we approach the design and testing when we start with requirements?
+
+Drive the design into two parts:
+Strategic design
+Tactical design
+
+Strategic design
+
+Very high level design. Jot down classes, some top level methods/functions,
+etc. Keep in mind these are details that can and should change as our understanding evolves.
+
+This gives you a starting point but we will be willing to change the design as we learn more.
+
+Gives us a starting point.
+
+Tactical design
+
+Here start with the most interesting or the most valuable part of the strategic
+design. Drive the design using automated unit tests. As you learn more, as
+you evolve the design, change the strategic design to match with your current
+understanding.
+
+If you are not sure, prototype or spike to learn and then write test and then code. Keep the spikes or the prototypes away from the code being designed using the tests.
+
+
+
+
+
+
+
+
+
