@@ -1,0 +1,41 @@
+1. How is TDD practiced in your current projects?
+
+JV: Each user story has tests written (some are writing tests before writing the code)
+SP: We make it as part of Definition of Done
+OR: Each user story has tests written
+HK: It's n ont practiced in our company.
+MM: Set up time to write the test can help reduce bugs (tests written before writing code)
+
+2. How is it working for you?
+
+JV: As QA myself I am a bit away from doing any TDD myself, but at least I can check them and developers know my thoughts. But I am trying to change it in a way that I can be helpfull also on this level.
+
+EP: It is difficult to know what to test first
+
+3. How is it working for the team?
+
+OR: It is easwy to dev if tests exist. If it fails you know something is wrong
+JV: I hope the team likes having them :)
+SP: It's useful as our programs are pretty large and interlinked, so tests are key to checking new features.
+EP: I am addicted to green ticks indicating all my tests pass. :) Definitely priceless to have
+good unit test coverage
+SM: clears all misconcetpions on the requirements well ahead to entire team as we have ready
+tests and provides time for discuwssions otherwise.
+
+4. What are some of the impediments?
+
+JV: Sometimes changing code, broke all the test just because they were poorly written in first place, or we find out that some crucial test are missing all together.
+
+SM: dev may just concentrate on passing the tests and may miss out minor works which may have not entirely covered through tests - nice to have pieces
+
+OR: if a service is old legacy, sometimes it is hard to run old test and create the new ones
+
+5. What percentage of testing is automated?
+
+JV: Usually in lower level of testing it is in higher numbers, but in E2E testing we are doing mostly happy crucial paths automated.
+SP: for the team the aim is that all tests run for each merge in the pipeline
+
+6. What are some of the places for improvements related to TDD and automation?
+
+JV: Better reporing might be beneficial
+
