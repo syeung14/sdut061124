@@ -1,0 +1,95 @@
+Types of tests:
+1. White box testing
+2. Black box testing
+
+White box testing is where the person writing the test knows about the
+implementation of the code and is interested in helping with the design of the code.
+
+Black box testing is where the person writing the test does not know or does not care about the implementation of the code, but is interested in what the code
+should do. Functional or acceptance testing
+
+Types of unit tests:
+
+1. Positive tests - does the code do what it is supposed to do?
+I deposit $100, did the balance goes up by $100 and ...
+
+2. Negative tests - does the code handle the invariants properly and take care
+of dealing with operations not allowed.
+
+Are operations on a closed account being permitted?
+
+3. Exception tests - does the code properly deal with exceptions both generation
+ad of handling.
+
+If someone tells you this code cannot be automated tested, they are telling you that the design of the code sucks.
+
+Testability is a design concern.
+
+A code that is poorly design is hard to test.
+
+4. Performance tests - If performance is important then not talk about it
+but instead write a test for it.
+
+Start with performance tests before starting to tweak the code for performance.
+
+What is a unit test?
+
+It is a test on a unit of code.
+
+What is then a unit of code?
+
+A unit of code is the smallest piece of code that does useful work.
+
+For smallest, think cohesion
+
+If a function does a lot of work, very complex looping, event management,
+etc. then it is not a unit of code. It can be split into smaller functions 
+that can be considered a unit and on which we can write unit tests. The
+larger functions can benefit from higher level tests than unit tests.
+
+If we can write poor quality code, we can also write poor quality tests.
+
+Test quality
+
+A unit test should focus on one small expected behavior that you are about to implement.
+
+Let the test fail first.
+Then write minimum code to make the test pass.
+Then refactor the code to remove duplications and to keep it minimalistic.
+
+Red-Green-Refactor
+
+The difference is often between can't and won't.
+
+Tests should be extremely small
+
+A test should tell a story of what it is helping us to design.
+
+Make the tests extremely clear
+
+AAA
+-Design your tests into three parts:
+Arrange
+Act
+Assert
+
+Arrange - minimally set up the things that we need for the test to run
+Act - perform the action that is the central focus on this test
+Assert - verify that the code did what is expected as a result of performing the said action
+
+Please use a blank line between the parts of AAA.
+Helps to quickly understand the parts of a test and easily navigate between them.
+
+
+No cryptic names for tests but not overly long names either
+Name the tests based on what you are expecting the code to do.
+Definitely not test1, test2, testa, testb,...
+
+test_empty_codes_return_empty_list_of_airports
+
+
+
+
+
+
+
