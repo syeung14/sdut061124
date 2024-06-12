@@ -103,7 +103,6 @@ public class TicTacToeBoardTest {
     var ex = assertThrows(TicTacToeBoardException.class, () -> ticTacToeBoard.placePeg(1, 2));
     assertEquals("A peg already exists at that location", ex.getMessage());
   }
-
 }
 
 //Kent Beck: Unit testing is a act of design more than an act of verification

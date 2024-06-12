@@ -13,6 +13,14 @@ public class TicTacToeBoard {
     }
   }
   public void placePeg(int row, int column) {
+//    if(row > SIZE) {
+//      throw new TicTacToeBoardException("Row is out of bounds");
+//    }
+    //code written without test will show up as poor coverage. We can avoid
+    //writing code without taking the time to write tests. It will also help us
+    //to think about > or >= in the row > SIZE. We can walk away with confidence, now
+    //and when someone changes the code.
+
     verifyLocationIsEmpty(row, column);
     pegs[row][column] = nextPegToPlace;
 
@@ -44,9 +52,9 @@ public class TicTacToeBoard {
   }
 
   private void verifyLocationIsEmpty(int row, int column) {
-        if(pegs[row][column] != Peg.EMPTY) {
-          throw new TicTacToeBoardException("A peg already exists at that location");
-        }
+    if (pegs[row][column] != Peg.EMPTY) {
+      throw new TicTacToeBoardException("A peg already exists at that location");
+    }
   }
 
   public Peg pegAt(int row, int column) {
