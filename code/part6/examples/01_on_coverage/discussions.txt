@@ -1,0 +1,36 @@
+Test coverage is a measure of how much of the code is exercised and verified using test cases.
+
+Test coverage is a very useful metric, but use it for good reasons.
+
+Test coverage is like cholestrol number.
+
+A bad cholestrol number if a health concern. A good cholestrol number is
+nothing to celebrate.
+
+A good coverage does *not* mean 
+-your tests are good
+-your code is good
+It simply says, you have tests that cover some code. That is all. Nothing to celebrate.
+
+A bad coverage *does* say we have written code without actually having written
+tests to exercise the code.
+
+From my experience (and I am honestly waiting to be proven wrong on this)
+show me a code with poor coverate, hyou have shown me a code that needs
+design improvements and refactoring.
+
+Every time someone shows me a code with poor coverage, our discussion
+quickly turns towards design, design princiles, coupling, code complexity,
+SRP, SLAP, etc. and never about writing more tests.
+
+If we write tests and write minimum code to pass the tests, the coverage 
+will be 100% (in the parts that are unit tested).
+
+I like 100% coveratge when we include all kinds of tests, unit, functional,
+approval, integration, manual,...
+
+I write automated tests not because I have a lot of time, it is because I don't.
+
+
+
+
