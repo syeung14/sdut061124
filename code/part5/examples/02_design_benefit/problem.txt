@@ -1,0 +1,64 @@
+We are going to build the game of tic-tac-toe.
+
+We have two players. One player can place a peg X, the other can place a peg O. One player can start, the other one can follow. They take turns to play.
+
+The object of the game is for one player to place all of their peg in a row, a column, or in a line diagonally.
+
+Recollect we discussed two levels of design:
+-Strategic
+-Tactical
+
+Let's come up with an initial strategic design and then drive the tactical design using tests.
+
+Strategic design (high level design ideas, not set on stone, gives us a starting point):
+Board
+Player
+Rules
+UI/Display
+Interface MovePeg
+GameEngine
+Score
+Logic
+Store scores
+db
+cloud
+Peg (as an enum)
+...
+
+We want to separate the GUI from the logic.
+
+We want to start with the logic and then think of slapping on a GUI on top of that.
+
+Where to start?
+
+You may go by process of elimination first. Think of classes from the strategic design that were tempting but may really not be necessary or at least not needed just yet.
+
+We may elimination the following for now with options to reconsider them later:
+cloud
+db
+UI/Display
+Rules
+Score
+Store scores
+Peg (as an enum)
+Player
+Interface MovePeg
+GameEngine
+
+
+We really want to focus on the essence of the game logic, we can think of
+TicTacToeRules as a starting point or a TicTacToeBoard which will 
+help us to design the logic.
+
+We can start with TicTacToeBoard.
+
+Tactical design (is a fine grained design, driven using automated tests,
+refined the strategic design along the way):
+
+Pick a class or a function that has the most interesting logic or behavior.
+Something that is valuable and gets us moving towards implementing the solution.
+
+How to proceed?
+-maintain a tests list (very informal, on a pice of paper)
+-think of principles to follow
+-think of the practices to follow

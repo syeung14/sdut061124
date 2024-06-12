@@ -1,0 +1,26 @@
+Practices to follow:
+-list the tests that come to mind, do not deliberate over them at this time.
+-think about the behavior rather than state (what you can do instead of what it contains - an action instead of a check on a state)
+-start with the canary test
+-think of positive tests
+-think of negative tests
+-think of exception tests
+-a canary test is useful to set up the test environment without being distracted by other things. It helps to quickly know if all necessary dependencies are in place for us to move forward to write the tests
+-pick a test that is useful and also quick to implement
+-focus on a behavior or an action rather than state (let the state fall in place to serve an action rather than being self-serving)
+-if a test will take more effort, postpone it as other tests may pave the way for that to be implemented more easily later
+-do not go sequentially on the list of tests you created
+-as you work with tests, remember to add more tests as they come to mind
+-a good design should eliminate the need for some tests
+-write minimum code to make a test pass
+-let the first few tests help us to design the skin, the tests that follow help us to design the guts. Outside in. Shape the interface then create an implementation.
+
+Make sure tests do not affect each other.
+Tests should be FAIR
+-Fast
+-Automated
+-Isolated
+-Repeatable
+
+-Red, Green, Refactor
+-Make it work, make it better real soon

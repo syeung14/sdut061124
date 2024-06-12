@@ -1,0 +1,3 @@
+-YAGNI: You Aren't Gonna Need It
+-DRY: Don't Repeat Yourself
+-SLAP: Single Level of Abstraction Principle

@@ -1,0 +1,25 @@
+Tests:
+✓canary test
+✓place a peg
+x does the board exist? - is this an action or a state verification? State, don't go there
+x initialize game with empty 3x3 grid - action or state? - state, don't go there
+x verify players are assigned their respective pegs / symbols
+x can a player access board
+x verify you can't place peg without a board
+-check correct cell is filled
+/correct peg placed on a place peg action (design took care of this)
+-check correct winner declared
+-check draw instead of a win
+x check only two players exists
+-check peg is placed within row bounds
+-check peg is placed within column bounds
+-check no moves possible after a win
+x check peg can be placed on an empty cell
+✓ check peg can not be placed on a occupied cell
+-verify players take turn to play
+✓place a third peg
+-verify row match win
+-verify column match win
+-verify diagonal match win
+-player can only place their own peg and not other players peg
+...
